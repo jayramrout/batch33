@@ -1,3 +1,5 @@
+package datatype;
+
 public class DataTypesExample_2 {
     // You can write the below statment directly inside the class.
     //System.out.println();

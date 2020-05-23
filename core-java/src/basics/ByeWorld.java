@@ -1,3 +1,5 @@
+package basics;
+
 /**
  * This is my first Program.
  * @author jrout
