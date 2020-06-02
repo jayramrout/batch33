@@ -13,7 +13,7 @@ public class IntegerArray_loop {
         distances[7] = 100.5f;
         // if i try to access the distances[1] then i would get 0.0
         // boolean array ? false
-
+        String name = "";
         String names[] = new String[10];
 //        Student students[] = new Student[40];
 
