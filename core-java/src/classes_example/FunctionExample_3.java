@@ -3,7 +3,6 @@ package classes_example;
 public class FunctionExample_3 {
 
     public static void main(String[] args) {
-
         FunctionExample_3 f = new FunctionExample_3();
         int first_value = f.add(10,3);
 
@@ -25,7 +24,8 @@ public class FunctionExample_3 {
      * method OverLoading...
      */
     public int add(int a , int b){
-        return a+b;
+        int val = a+b;
+        return val;
     }
 
     public static int add(int a , int b, int c){
