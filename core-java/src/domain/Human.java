@@ -22,6 +22,22 @@ public class Human {
         this.ssn = ssn;
     }
 
+    public Human(String name, String ssn, int age){
+        this(name,ssn);
+        this.age = age;
+    }
+
+    public Human(String name, String ssn, int age, int height){
+        this(name,ssn,age);
+        this.height = height;
+    }
+
+    /* You can add a constructor or function by just changing the sequence...
+    public Human(String name, int age, String ssn){
+        this.name = name;
+        this.ssn = ssn;
+        this.age = age;
+    }*/
 
     // name convention..
     public void setName(String name){
@@ -64,7 +80,7 @@ public class Human {
         hairColor = hairColorX;
     }
 
-    public String toString() {
+    /*public String toString() {
         return "Human{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
@@ -72,7 +88,7 @@ public class Human {
                 ", ssn=" + this.ssn +
                 ", hairColor='" + hairColor + '\'' +
                 '}';
-    }
+    }*/
 
     public String getSsn() {
         return ssn;
