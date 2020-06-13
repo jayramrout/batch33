@@ -1,5 +1,14 @@
 package domain;
 
+// Gadget
+//    battery...
+
+//Iphone extends Gadge
+//    touchscreen
+
+// Drone extends Gadget
+    // fly
+
 public class Human {
     // my name is <>
 
@@ -8,6 +17,16 @@ public class Human {
     private float height;
     private String hairColor;
     private String ssn;
+    private String favoriteSports;
+
+    public String getFavoriteSports() {
+        return favoriteSports;
+    }
+
+    public void setFavoriteSports(String favoriteSports) {
+        this.favoriteSports = favoriteSports;
+    }
+
 
     /*public Human(){
         hairColor = "Black";
@@ -15,6 +34,7 @@ public class Human {
 
     public Human(String ssn){
         this.ssn = ssn;
+        System.out.println("Human "+ ssn +" Created");
     }
 
     public Human(String name, String ssn){
@@ -80,7 +100,7 @@ public class Human {
         hairColor = hairColorX;
     }
 
-    /*public String toString() {
+    public String toString() {
         return "Human{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
@@ -88,7 +108,12 @@ public class Human {
                 ", ssn=" + this.ssn +
                 ", hairColor='" + hairColor + '\'' +
                 '}';
-    }*/
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("I am been destroyed "+ ssn);
+    }
 
     public String getSsn() {
         return ssn;
