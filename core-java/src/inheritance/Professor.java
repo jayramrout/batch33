@@ -28,4 +28,9 @@ public class Professor extends Human {
     public void setVisitingProf(String[] visitingProf) {
         this.visitingProf = visitingProf;
     }
+
+    @Override
+    public void speakingSkills() {
+        System.out.println("I speak atleast least 6 language...including spanish/french");
+    }
 }

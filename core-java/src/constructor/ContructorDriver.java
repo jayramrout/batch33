@@ -12,7 +12,7 @@ public class ContructorDriver {
         System.out.println(a);
 
 
-        Human human = new Human("Peter","44444",40,5);
+        Human human = null;//new Human("Peter","44444",40,5);
         System.out.println(human);
         System.out.println("Before "+ human.getName());
         cd.changeValue(human);

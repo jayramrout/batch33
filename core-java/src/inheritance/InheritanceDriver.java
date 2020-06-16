@@ -4,18 +4,23 @@ import domain.Human;
 
 public class InheritanceDriver {
     public static void main(String[] args) {
-        Student student = new Student("890-777-7676");
-        student.setName("Peter");
-        student.setRollno(33333);
-        student.setFavoriteSports("Volleyball");
+        Human xs = new Student("890-777-7676");
+        xs.setName("Peter");
+//        xs.setRollno(33333);
+        xs.setFavoriteSports("Volleyball");
 
-//        Student x = new Human("890-777-7676");
+        xs.basicBehaviour();
 
-            Human x = new Student("890-777-7676");
+        Human p = new Professor("787-989-999");
+        p.basicBehaviour();
+
+//          Student x = new Human("890-777-7676");
+//          Human x = new Student("890-777-7676");
 
 //        Professor p = new Student("787-989-88");
 
-        Human xy = new Human("343434"); // abstract class...
+//        Human xy = new Human("343434"); // abstract class...
+        // for an abstract class , you cannot create an instance of that class...
 
     }
 

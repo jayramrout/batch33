@@ -26,9 +26,9 @@ public class GarbageCollectionsExample {
     }
 
     public static void reacheableExample(){
-        Human h1 = new Human("SSN 1");
-        Human h2 = new Human("SSN 2");
-        Human h3 = new Human("SSN 2");
+        Human h1 = null;//new Human("SSN 1");
+        Human h2 = null;//new Human("SSN 2");
+        Human h3 = null;//new Human("SSN 2");
 
         System.out.println(h1.getName());
 
@@ -40,7 +40,7 @@ public class GarbageCollectionsExample {
 
 
         System.out.println(h1.getSsn());
-        new Human("Som");
+        //new Human("Som");
 
     }
 

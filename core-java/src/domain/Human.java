@@ -9,7 +9,7 @@ package domain;
 // Drone extends Gadget
     // fly
 
-public class Human {
+public abstract class Human {
     // my name is <>
 
     private String name; // hiding the instance variable from outside world..encapsulation
@@ -122,4 +122,19 @@ public class Human {
     public void setSsn(String ssn) {
         this.ssn = ssn;
     }
+
+    public void basicBehaviour(){
+        System.out.println("Basic Behaviour of a person having ssn "+ ssn + " is to give and take respect");
+    }
+
+    public void taxCalcualtion(){
+        if(age > 20 && age < 55){
+            System.out.println("You pay $100 every month..");
+        }else {
+            System.out.println("You Pay $75 every month");
+        }
+    }
+
+    public abstract void speakingSkills();
+
 }

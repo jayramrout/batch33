@@ -2,6 +2,7 @@ package inheritance;
 
 import domain.Human;
 
+
 public class Student extends Human {
 
     private String schoolName;
@@ -33,5 +34,17 @@ public class Student extends Human {
 
     public void setGrade(String grade) {
         this.grade = grade;
+    }
+
+    @Override
+    public void basicBehaviour() {
+//        super.basicBehaviour();
+        System.out.println("Being a student , you should read for atleast 4 hours...");
+
+    }
+
+    @Override
+    public void speakingSkills() {
+        System.out.println("I speak atleast least 5 language...including spanish");
     }
 }
