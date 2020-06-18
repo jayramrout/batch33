@@ -1,6 +1,6 @@
 package classes_example;
 
-public class Room {
+public class Room { // Has-A Relationship
     String name;
     Television television;
     Laptop laptop;

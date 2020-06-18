@@ -3,7 +3,7 @@ package inheritance;
 import domain.Human;
 
 
-public class Student extends Human {
+public class Student extends Human implements Swimming{
 
     private String schoolName;
     private int rollno;
@@ -46,5 +46,19 @@ public class Student extends Human {
     @Override
     public void speakingSkills() {
         System.out.println("I speak atleast least 5 language...including spanish");
+    }
+
+
+    public void allRoundSkills(){
+        if(getFavoriteSports() != null && grade!= null && grade.equals("5")){
+            System.out.println("This is a all rounder student.");
+        }else {
+            System.out.println("This is a standard student...");
+        }
+    }
+
+    @Override
+    public void swim() {
+
     }
 }

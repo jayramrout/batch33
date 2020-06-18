@@ -17,9 +17,11 @@ public class InheritanceDriver_2 {
         ref.printCustomDetails(human);
     }
 
-    public void printCustomDetails(Human ref){
+    public void printCustomDetails(Human ref) {
         ref.basicBehaviour();
         System.out.println(String.format("Name in UpperCase %s , Sports in Lowercase %s", ref.getName() , ref.getFavoriteSports()));
         ref.taxCalcualtion();
+
     }
+
 }
