@@ -2,7 +2,7 @@ package exceptionhandling;
 
 import java.util.Scanner;
 
-public class ExceptionExample_2 {
+public class ExceptionExample_Finally {
     public static void main(String[] args) {
         String numberArray[] = {"1","2","3","4","5","SIX"};
         Scanner scanner = new Scanner(System.in);
@@ -14,7 +14,7 @@ public class ExceptionExample_2 {
         int i = 0;
 
 //        int a = 40/0; // uncaught exception..
-        try{
+        try {
             // uncaught exception...
             int finalResult = num/div; // 10/5 = 2 // ArithmeticException
             String strVal = numberArray[finalResult]; // NumberFormatException
@@ -29,7 +29,7 @@ public class ExceptionExample_2 {
         }catch (Exception nfe){
             i = 10;
         }finally {
-
+            System.out.println("This is my finally block...");
         }
         int myFinalResult = i/2;
 
@@ -39,4 +39,6 @@ public class ExceptionExample_2 {
 
 
     }
+
+
 }
