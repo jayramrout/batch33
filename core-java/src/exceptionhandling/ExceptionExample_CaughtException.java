@@ -6,7 +6,7 @@ public class ExceptionExample_CaughtException {
     public static void main(String[] args) {
 
         String numberArray[] = {"1","2","3","4","5","SIX"};
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner  = new Scanner(System.in);
         System.out.println("Enter first  number :"); // 10
         int num = scanner.nextInt();
 

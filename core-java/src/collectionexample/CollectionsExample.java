@@ -9,7 +9,6 @@ public class CollectionsExample {
     public static void main(String[] args) {
         int ages[] = {1,2,3,4,5};
 
-
         List ageList = new ArrayList<>();
         // Set
         // Map
@@ -18,6 +17,10 @@ public class CollectionsExample {
         // Filters
         // Predicate
         // Comsumers
+
+        //anna
+        //beta
+        //zyka
 
         ageList.add(1);
         ageList.add(2);
