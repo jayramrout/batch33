@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dvdDaoImpl" class="jrout.tutorial.spring.dao.DVDDaoImpl"/>
+    <bean id="dvdServiceImpl" class="jrout.tutorial.spring.service.DVDServiceImpl">
+        <property name="dao" ref="dvdDaoImpl"/>
+    </bean>
+
+    <!--DVDDaoImpl d = new DVDDaoImpl();
+    DVDServiceImpl ds = new DVDServiceImpl();
+    ds.setDao(d);-->
+</beans>
