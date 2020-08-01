@@ -40,6 +40,8 @@ public class DVDControllerServlet extends HttpServlet {
                 Customer customer = idvdService.searchCustomerById(custId);
                 customers.add(customer);
             }
+
+
             req.setAttribute("customerResult", customers);
             requestDispatcher = req.getRequestDispatcher("customerResult.jsp");
             requestDispatcher.forward(req,resp);

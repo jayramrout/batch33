@@ -4,4 +4,15 @@
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
+
+    <!--<servlet> &lt;!&ndash;front controller&ndash;&gt;
+        <servlet-name>batch33xxx</servlet-name>
+        <servlet-class>jrout.tutorial.servlet.controller.Batch33Servlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        &lt;!&ndash;the name dispatcher should match the dispatcher-servlet &ndash;&gt;
+        <servlet-name>batch33xxx</servlet-name>
+        <url-pattern>batch33</url-pattern>
+    </servlet-mapping>-->
 </web-app>
